@@ -1,0 +1,27 @@
+<idea-plugin>
+    <id>me.bytebeats.agp.secretary</id>
+    <name>Gradle Plugins Secretary</name>
+    <vendor email="happychinapc@gmail.com" url="https://github.com/bytebeats">bytebeats</vendor>
+
+    <description><![CDATA[
+    Gradle Plugins Secretary: help to create and develop a standard Gradle Plugin Project in a quite easy way.<br>
+    <em>A standard Gradle Plugin project or module</em>
+    <em>buildSrc module</em>
+    <em>Groovy Classes</em>
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+<!--    <depends>com.intellij.modules.platform</depends>-->
+    <depends>org.jetbrains.plugins.gradle</depends>
+    <depends>org.jetbrains.android</depends>
+    <depends>org.intellij.groovy</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
