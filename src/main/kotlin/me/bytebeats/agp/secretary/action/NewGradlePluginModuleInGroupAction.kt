@@ -18,7 +18,7 @@ import javax.swing.Icon
  */
 
 class NewGradlePluginModuleInGroupAction : NewGradlePluginModuleAction(
-    getString(NEW_GRADLE_PLUGIN_MODULE),
+    getString(GRADLE_PLUGIN_MODULE),
     getString(NEW_GRADLE_PLUGIN_MODULE_DESC),
     AllIcons.Nodes.Module
 ) {

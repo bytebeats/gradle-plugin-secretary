@@ -19,7 +19,7 @@ buildscript {<#if includeKotlinSupport!false>
     repositories {
         <@useProperties/>
         google()
-        jcenter()
+        mavenCentral()
         <#if includeKotlinEapRepo!false>maven { url '${kotlinEapRepoUrl}' }</#if>
     }
     dependencies {
@@ -35,7 +35,7 @@ allprojects {
     repositories {
         <@useProperties/>
         google()
-        jcenter()
+        mavenCentral()
         <#if includeKotlinEapRepo!false>maven { url '${kotlinEapRepoUrl}' }</#if>
     }
 }
