@@ -1,6 +1,7 @@
 package me.bytebeats.agp.secretary
 
 import com.intellij.openapi.util.IconLoader
+import java.util.*
 import javax.swing.Icon
 
 /**
@@ -14,5 +15,6 @@ import javax.swing.Icon
 
 object Resources {
     fun getIcon(icon: String): Icon = IconLoader.getIcon("/icons/$icon", Resources::class.java)
+    fun getString(key: String): String = ResourceBundle.getBundle(BUNDLE_STRINGS).getString(key)
 }
 
