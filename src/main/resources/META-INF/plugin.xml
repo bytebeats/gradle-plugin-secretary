@@ -23,5 +23,10 @@
 
     <actions>
         <!-- Add your actions here -->
+        <action id="io.github.bytebetas.agp.NewGroovyClassAction"
+            class="me.bytebeats.agp.secretary.action.NewGroovyClassAction" text="Groovy Class"
+            description="Create a new groovy class">
+            <add-to-group group-id="NewGroup" anchor="after" relative-to-action="NewClass" />
+        </action>
     </actions>
 </idea-plugin>
