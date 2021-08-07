@@ -4,6 +4,7 @@ import com.intellij.icons.AllIcons
 import com.intellij.ide.projectView.impl.ModuleGroup
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.actionSystem.LangDataKeys
+import me.bytebeats.agp.secretary.BUILD_SRC_MODULE
 import me.bytebeats.agp.secretary.NEW_BUILD_SRC_MODULE
 import me.bytebeats.agp.secretary.NEW_BUILD_SRC_MODULE_DESC
 import me.bytebeats.agp.secretary.Resources
@@ -20,7 +21,7 @@ import javax.swing.Icon
  */
 
 class NewBuildSrcModuleInGroupAction : NewBuildSrcModuleAction(
-    getString(NEW_BUILD_SRC_MODULE),
+    getString(BUILD_SRC_MODULE),
     getString(NEW_BUILD_SRC_MODULE_DESC),
     AllIcons.Nodes.Module
 ) {

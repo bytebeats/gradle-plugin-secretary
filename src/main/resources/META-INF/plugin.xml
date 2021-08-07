@@ -12,7 +12,7 @@
 
     <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
          on how to target different products -->
-    <depends>com.intellij.modules.platform</depends>
+<!--    <depends>com.intellij.modules.platform</depends>-->
     <depends>org.jetbrains.plugins.gradle</depends>
     <depends>org.jetbrains.android</depends>
     <depends>org.intellij.groovy</depends>
@@ -28,5 +28,25 @@
             description="Create a new groovy class">
             <add-to-group group-id="NewGroup" anchor="after" relative-to-action="NewClass" />
         </action>
+
+        <group id="io.github.bytebeats.agp.NewGradlePluginModuleGroup">
+            <action class="me.bytebeats.agp.secretary.action.NewBuildSrcModuleAction"
+                id="io.github.bytebeats.agp.NewBuildSrcModuleAction" text="New BuildSrc Module..."
+                description="Create a new buildSrc module" />
+            <action class="me.bytebeats.agp.secretary.action.NewGradlePluginModuleAction"
+                id="io.github.bytebeats.agp.NewGradlePluginModuleAction" text="New Gradle Plugin Module..."
+                description="Create a new Gradle Plugin module" />
+            <add-to-group group-id="NewProjectOrModuleGroup" relative-to-action="NewModule" anchor="after" />
+        </group>
+        <group id="io.github.bytebeats.agp.NewGradlePluginModuleInGroupGroup">
+            <action class="me.bytebeats.agp.secretary.action.NewBuildSrcModuleInGroupAction"
+                id="io.github.bytebeats.agp.NewBuildSrcModuleInGroupAction" text="BuildSrc Module"
+                description="Create a new buildSrc module" />
+            <action class="me.bytebeats.agp.secretary.action.NewGradlePluginModuleInGroupAction"
+                id="io.github.bytebeats.agp.NewGradlePluginModuleInGroupAction" text="Gradle Plugin Module"
+                description="Create a new Gradle Plugin module" />
+            <add-to-group group-id="NewGroup" relative-to-action="NewModuleInGroup" anchor="after" />
+        </group>
+
     </actions>
 </idea-plugin>
