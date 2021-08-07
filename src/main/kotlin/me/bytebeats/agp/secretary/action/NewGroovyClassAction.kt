@@ -1,6 +1,5 @@
 package me.bytebeats.agp.secretary.action
 
-import com.android.SdkConstants
 import com.intellij.ide.actions.CreateFileFromTemplateDialog
 import com.intellij.ide.actions.CreateTemplateInPackageAction
 import com.intellij.openapi.project.DumbAware

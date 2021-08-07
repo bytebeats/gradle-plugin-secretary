@@ -17,7 +17,11 @@ import java.io.File
  * @Description TO-DO
  */
 
-class GradlePluginModuleModel(val project: Project, val templateDirectory: File?) ://val templateHandle: TemplateHandle,
+class GradlePluginModuleModel(
+    val project: Project,
+    val template: File,
+    val templateDirectory: File?
+) ://val templateHandle: TemplateHandle,
         WizardModel() {
     val pluginName = StringValueProperty("plugin")
     val packageName = StringValueProperty()
