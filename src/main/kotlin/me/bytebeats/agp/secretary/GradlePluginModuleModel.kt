@@ -1,9 +1,11 @@
 package me.bytebeats.agp.secretary
 
+import com.android.tools.idea.npw.model.TemplateMetrics
 import com.android.tools.idea.observable.core.BoolValueProperty
 import com.android.tools.idea.observable.core.StringValueProperty
 import com.android.tools.idea.wizard.model.WizardModel
 import com.android.utils.FileUtils
+import com.intellij.codeInsight.template.Template
 import com.intellij.openapi.project.Project
 import java.io.File
 
@@ -19,7 +21,7 @@ import java.io.File
 
 class GradlePluginModuleModel(
     val project: Project,
-    val template: File,
+    val template: Template,
     val templateDirectory: File?
 ) ://val templateHandle: TemplateHandle,
         WizardModel() {
@@ -58,5 +60,15 @@ class GradlePluginModuleModel(
 //        val injector = TemplateResolver.Companion.
     }
 
+    private fun renderTemplate(
+        dryRun: Boolean,
+        project: Project,
+        moduleRoot: File,
+        templateValues: Map<String, Any>,
+        filesToOpen: List<File>?
+    ) {
+
+
+    }
 
 }
